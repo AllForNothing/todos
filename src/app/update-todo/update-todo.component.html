@@ -1,0 +1,11 @@
+<div class="mask" *ngIf="isOpen">
+  <form class="center">
+    <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="title">
+    <button (click)="save()">ok</button> <button (click)="isOpen=false">cancel</button>
+  </form>
+</div>
+
+
+
+
+
