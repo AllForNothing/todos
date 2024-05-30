@@ -1,0 +1,38 @@
+div.inputDiv {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0 0 0;
+}
+
+div.inputDiv input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #dddddd;
+  -webkit-tap-highlight-color: transparent;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+
+div.inputDiv input:focus ~ span.inputText, div.inputDiv input:valid ~ span.inputText {
+  top: 0;
+  transition: all 100ms linear;
+  color: #4444ff;
+}
+
+div.inputDiv input:focus, div.inputDiv input:valid {
+  border-bottom: 2px solid #4444ff;
+}
+
+div.inputDiv span.inputText {
+  position: absolute;
+  font-weight: 200;
+  top: 20px;
+  left: 10px;
+  transition: all 100ms linear;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}

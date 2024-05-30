@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddTodoComponent } from './add-todo.component';
+import { ImageListComponent } from './image-list.component';
 
-describe('AddTodoComponent', () => {
-  let component: AddTodoComponent;
-  let fixture: ComponentFixture<AddTodoComponent>;
+describe('ImageListComponent', () => {
+  let component: ImageListComponent;
+  let fixture: ComponentFixture<ImageListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AddTodoComponent]
+      imports: [ImageListComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AddTodoComponent);
+    fixture = TestBed.createComponent(ImageListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

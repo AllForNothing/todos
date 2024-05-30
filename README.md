@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Start
 
 
-`npm install`
-`npm run start`
+1.`npm install`
+2.`npm run start`
 
 Then open your browser on http://localhost:4200

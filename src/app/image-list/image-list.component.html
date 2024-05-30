@@ -1,0 +1,26 @@
+<div>全部任务</div>
+<div *ngFor="let item of allTasks | keyvalue">
+  <span>任务ID:</span> <span>{{item.key}}</span>
+  <span>任务状态:</span> <span>{{item.value.state}}</span>
+  <span>任务结果:</span> <span>{{item.value.data}}</span>
+
+</div>
+
+<div>当前任务：{{currenTaskId}}</div>
+
+
+
+
+<app-image-search (inputEvent)="handleInputEvent($event)" />
+
+@if (loading) {
+  <p>loading</p>
+} @else {
+  <app-water-fall [images]="images" />
+}
+
+
+
+
+
+
